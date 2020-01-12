@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Akzidenz Grotesk BQ Medium, Helvetica, Arial;
+            line-height: 24px;
+        }
+
+        #game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #taula1,
+        #taula2 {
+            padding: 1rem;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            display: flex;
+            width: 30%;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        #iniciar,
+        #Següent {
+            padding: 1rem;
+            box-shadow: 5px 5px black;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 0.2rem;
+            background-color: #13aa52;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <button id="iniciar">Iniciar</button>
+        <button id="Següent">Següent</button>
+    </div>
+
+    <div id="game">
+        <div id="taula1"></div>
+        <div id="taula2"></div>
+        <div id="taulaTest"></div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
